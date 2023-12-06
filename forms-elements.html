@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Forms / Elements - E-Services Sindh</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+
+        <span class="d-none d-lg-block">E-Services Sindh</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">0</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 0 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.png" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>E-Services Sindh</h6>
+
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link " data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Services</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="forms-elements.html" class="active">
+              <i class="bi bi-circle"></i><span>Domicile & PRC</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Sale Certificate</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Mutation</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Correction in Record of Rights</span>
+            </a>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Pass Book</span>
+            </a>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Redressal of grievances</span>
+            </a>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Misc Application</span>
+            </a>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Heirship Certificate</span>
+            </a>
+
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Departments</span><i
+            class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="tables-general.html">
+              <i class="bi bi-circle"></i><span>General Tables</span>
+            </a>
+          </li>
+          <li>
+            <a href="tables-data.html">
+              <i class="bi bi-circle"></i><span>Data Tables</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Tables Nav -->
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="users-profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-contact.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-register.html">
+          <i class="bi bi-card-list"></i>
+          <span>Register</span>
+        </a>
+      </li><!-- End Register Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Domicile & PRC</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Forms</li>
+          <li class="breadcrumb-item active">Elements</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <div class="p-1">
+              <h5 class="card-title text-white" style="background-color: #1a75d2; border-radius: 6px; padding:15px;">Application Form
+                <span class="text-white">(please verify the details)</span>
+              </h5>
+            </div>
+
+              <!-- Domicile & PRC -->
+
+              <body style="background-color: #f7f7f7;">
+                <div class="container mt-2">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                      <form id="multiStepForm">
+                       
+                        <!-- Step 1 -->
+                        <div class="form-step" id="step1">
+                          <h4>Step 1</h4>
+                          <div class="row">
+                          <div class="col-md-3 mb-3">
+                            <label for="inputName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="inputGender" class="form-label">Gender</label>
+                            <select class="form-control" id="inputGender" style="width: 100%;">
+                              <option not selected>Select-Gender</option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                              <option value="other">Other</option>
+                            </select>
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="MobileNumber" class="form-label">Mobile Number</label>
+                            <input type="text" placeholder="Enter Mobile Number" name="mobile" class="form-control"
+                              id="MobileNumber" required style="width: 100%;" oninput="formatMobileNumber(this)">
+                            <div class="invalid-feedback" style="display: none;">Please enter a valid Pakistani mobile
+                              number (11 digits)!</div>
+                          </div>
+
+                          <script>
+ // Function to validate Step 1
+ function validateStep1() {
+    const name = document.getElementById("inputName").value;
+    const gender = document.getElementById("inputGender").value;
+    const mobile = document.getElementById("MobileNumber").value;
+
+    if (!name || !gender || !mobile) {
+      alert("Please fill in all required fields in Step 1.");
+      return false; // Prevent proceeding to the next step
+    }
+
+    // Additional validation logic for mobile number can be added here if needed
+
+    return true; // Proceed to the next step
+  }
+
+
+                            function formatMobileNumber(input) {
+                              // Remove non-numeric characters and limit to 11 characters
+                              let cleanedInput = input.value.replace(/\D/g, '').substr(0, 11);
+                          
+                              // Insert hyphens at appropriate positions, excluding the second last number
+                              if (cleanedInput.length > 4) {
+                                cleanedInput = cleanedInput.substring(0, 4) + '-' + cleanedInput.substring(4);
+                              }
+                              // if (cleanedInput.length > 7) {
+                              //   cleanedInput = cleanedInput.substring(0, 7) + cleanedInput.substring(8); // Remove the dash before the second last number
+                              // }
+                          
+                              // Update the input value
+                              input.value = cleanedInput;
+                            }
+                          </script>
+                          
+
+                          <div class="col-md-3 mb-3">
+                            <label for="inputAddress" class="form-label">Permanent Address</label>
+                            <input type="Address" class="form-control" id="inputAddress"
+                              placeholder="Enter your Address">
+                          </div>
+                          <div class="col-md-3 mb-3">
+                            <label for="inputDistrict" class="form-label">District</label>
+                            <select class="form-control" id="inputDistrict" name="district" style="width: 100%;">
+                              <!-- JavaScript will populate options here -->
+                            </select>
+                          </div>
+                          
+
+                          <script>
+                            // District names
+                            var districtNames = [
+                              "Badin",
+                              "Dadu",
+                              "Ghotki",
+                              "Hyderabad",
+                              "Jacobabad",
+                              "Jamshoro",
+                              "Karachi Central",
+                              "Kashmore",
+                              "Khairpur",
+                              "Larkana",
+                              "Matiari",
+                              "Mirpur Khas",
+                              "Naushahro Firoze",
+                              "Shaheed Benazirabad",
+                              "Qambar Shahdadkot",
+                              "Sanghar",
+                              "Shikarpur",
+                              "Sukkur",
+                              "Tando Allahyar",
+                              "Tando Muhammad Khan",
+                              "Tharparkar",
+                              "Thatta",
+                              "Umerkot",
+                              "Sujawal",
+                              "Karachi East",
+                              "Karachi South",
+                              "Karachi West",
+                              "Korangi",
+                              "Malir"
+                            ];
+
+                            // Get the select element
+                            var selectElement = document.getElementById("inputDistrict");
+
+                            // Populate the select element with options
+                            for (var i = 0; i < districtNames.length; i++) {
+                              var option = document.createElement("option");
+                              option.value = i + 1; // Set the option value to match your values (1, 2, 3, ...)
+                              option.text = districtNames[i]; // Set the option text to the district name
+                              selectElement.appendChild(option);
+                            }
+                          </script>
+
+                          
+                        </div>
+                        <button type="button" class="btn btn-primary next-step">Next</button>
+                      </div>
+
+                        <!-- Step 2 -->
+                        <div class="form-step" id="step2">
+                          <h4>Step 2</h4>
+                          <p style="color: #007BFF;">(Please Upload the required documents)</p>
+                          <div class="row">
+
+                          <form id="cnicForm" enctype="multipart/form-data">
+                            <div class="col-md-4">
+                            <label for="cnicFile1">CNIC of Father / Mother (Front)</label>
+                            <input type="file" id="cnicFile1" name="cnicFile" accept=".jpg, .jpeg, .png, .pdf"
+                              style="border: 2px solid #ccc; padding: 5px; cursor: pointer;">
+                            <span style="color: rgb(208, 151, 6); font-size: 12px; display: block;">(maximum file size 2MB, File Format
+                              JPG, PNG, JPEG, PDF)</span>
+                            <p id="fileSizeError1" style="color: red;"></p>
+                            <p id="fileTypeError1" style="color: red;"></p>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="cnicFile2">CNIC of Father / Mother (Back)</label>
+                            <input type="file" id="cnicFile2" name="cnicFile" accept=".jpg, .jpeg, .png, .pdf"
+                              style="border: 2px solid #ccc; padding: 5px; cursor: pointer;">
+                            <span style="color: rgb(208, 151, 6); font-size: 12px; display: block;">(maximum file size 2MB, File Format
+                              JPG, PNG, JPEG, PDF)</span>
+                            <p id="fileSizeError2" style="color: red;"></p>
+                            <p id="fileTypeError2" style="color: red;"></p>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="cnicFile3">Educational Certificate</label>
+                            <input type="file" id="cnicFile3" name="cnicFile" accept=".jpg, .jpeg, .png, .pdf"
+                              style="border: 2px solid #ccc; padding: 5px; cursor: pointer;">
+                            <span style="color: rgb(208, 151, 6); font-size: 12px; display: block;">(maximum file size 2MB, File Format
+                              JPG, PNG, JPEG, PDF)</span>
+                            <p id="fileSizeError3" style="color: red;"></p>
+                            <p id="fileTypeError3" style="color: red;"></p>
+                          </div>
+                            <div class="col-md-4">
+                            <label for="cnicFile4">Residential Certificate</label>
+                            <input type="file" id="cnicFile4" name="cnicFile" accept=".jpg, .jpeg, .png, .pdf"
+                              style="border: 2px solid #ccc; padding: 5px; cursor: pointer;">
+                            <span style="color: rgb(208, 151, 6); font-size: 12px; display: block;">(maximum file size 2MB, File Format
+                              JPG, PNG, JPEG, PDF)</span>
+                            <p id="fileSizeError4" style="color: red;"></p>
+                            <p id="fileTypeError4" style="color: red;"></p>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="cnicFile5">Voter List Verification</label>
+                            <input type="file" id="cnicFile5" name="cnicFile" accept=".jpg, .jpeg, .png, .pdf"
+                              style="border: 2px solid #ccc; padding: 5px; cursor: pointer;">
+                            <span style="color: rgb(208, 151, 6);font-size: 12px; display: block;">(maximum file size 2MB, File Format
+                              JPG, PNG, JPEG, PDF)</span>
+                            <p id="fileSizeError5" style="color: red;"></p>
+                            <p id="fileTypeError5" style="color: red;"></p>
+                          </div>
+                          <div class="col-md-4">
+                            <label for="cnicFile6">Utility Bill</label>
+                            <input type="file" id="cnicFile6" name="cnicFile" accept=".jpg, .jpeg, .png, .pdf"
+                              style="border: 2px solid #ccc; padding: 5px; cursor: pointer;">
+                            <span style="color: rgb(208, 151, 6); font-size: 12px; display: block;">(maximum file size 2MB, File Format
+                              JPG, PNG, JPEG, PDF)</span>
+                            <p id="fileSizeError6" style="color: red;"></p>
+                            <p id="fileTypeError6" style="color: red;"></p>
+                          </div>
+                          </form>
+                        </div>
+                          <script>
+
+                             // Function to validate Step 2 (file uploads)
+  function validateStep2() {
+    // Check if all file inputs in Step 2 have files selected
+    const fileInputs = document.querySelectorAll("#step2 input[type='file']");
+    for (const fileInput of fileInputs) {
+      if (!fileInput.files || fileInput.files.length === 0) {
+        alert("Please upload all required documents in Step 2.");
+        return false; // Prevent proceeding to the next step
+      }
+    }
+
+    // Additional validation logic for file types and sizes can be added here if needed
+
+    return true; // Proceed to the next step
+  }
+
+                            // Your JavaScript code for validation here...
+                          </script>
+                          <button type="button" class="btn btn-secondary prev-step">Previous</button>
+                          <button type="button" class="btn btn-primary next-step">Next</button>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="form-step" id="step3">
+                          <h4>Step 3</h4>
+                          <label for="cnicFile7">Notarized Affidavit</label>
+                          <input type="file" id="cnicFile7" name="cnicFile" accept=".jpg, .jpeg, .png, .pdf"
+                            style="border: 2px solid #ccc; padding: 5px; cursor: pointer;">
+                          <span style="color: rgb(208, 151, 6); font-size: 14px;">(maximum file size 2MB, File Format
+                            JPG, PNG, JPEG, PDF)</span>
+                          <p id="fileSizeError6" style="color: red;"></p>
+                          <p id="fileTypeError6" style="color: red;"></p>
+
+                          <!-- Slider for PSID -->
+                          <label for="psidSlider">Generate</label>
+                          <input type="range" id="psidSlider" min="0" max="100" value="0" class="form-range"
+                            style="width: 100%;">
+                          <p>PSID Number</p>
+                          <input type="text" id="psidNumber" class="form-control" placeholder="Enter PSID Number">
+                          <p id="psidValue">0</p>
+                          <!-- Declaration / Undertaking -->
+                          <label for="declarationTextarea">Declaration / Undertaking</label>
+                          <textarea id="declarationTextarea" class="form-control" rows="4"
+                            placeholder="I, do hereby solemnly, and sincerely declare that the aforementioned provided information/data is true and correct to the best of my knowledge and nothing has been concealed"
+                            style="border: none; color: #333;" readonly></textarea>
+
+
+                          <!-- Checkbox for Agreement (Styled without box) -->
+                          <div class="form-check mt-2 mb-2" style="display: flex; align-items: center;">
+                            <input type="checkbox" class="form-check-input" id="agreementCheckbox"
+                              style="margin-right: 10px;">
+                            <label class="form-check-label" for="agreementCheckbox" style="margin: 0;">I agree to the
+                              terms and conditions.</label>
+                          </div>
+
+                          <script>
+ 
+                            const psidSlider = document.getElementById("psidSlider");
+                            const psidValue = document.getElementById("psidValue");
+                            const psidNumber = document.getElementById("psidNumber");
+
+                            psidSlider.addEventListener("input", () => {
+                              psidValue.innerText = psidSlider.value;
+                            });
+// Function to validate Step 3 (PSID and checkbox)
+function validateStep3() {
+    const psid = document.getElementById("psidNumber").value;
+    const agreementCheckbox = document.getElementById("agreementCheckbox").checked;
+
+    if (!psid) {
+      alert("Please enter PSID number in Step 3.");
+      return false; // Prevent proceeding to the next step
+    }
+
+    if (!agreementCheckbox) {
+      alert("Please agree to the terms and conditions in Step 3.");
+      return false; // Prevent proceeding to the next step
+    }
+
+    // Additional validation logic for PSID format can be added here if needed
+
+    return true; // Proceed to the next step
+  }
+
+  // Add event listeners to "Next" buttons for each step
+  const nextButtons = document.querySelectorAll(".next-step");
+  for (const nextButton of nextButtons) {
+    nextButton.addEventListener("click", function () {
+      let isStepValid = false;
+      const currentStep = this.parentElement;
+      const nextStep = currentStep.nextElementSibling;
+
+      // Determine which step we are validating
+      if (currentStep.id === "step1") {
+        isStepValid = validateStep1();
+      } else if (currentStep.id === "step2") {
+        isStepValid = validateStep2();
+      } else if (currentStep.id === "step3") {
+        isStepValid = validateStep3();
+      }
+
+      if (isStepValid) {
+        currentStep.style.display = "none"; // Hide the current step
+        nextStep.style.display = "block"; // Show the next step
+      }
+    });
+  }
+                            // JavaScript code for handling other functionalities (previous/next buttons, etc.)
+                          </script>
+                          <button type="button" class="btn btn-secondary prev-step">Previous</button>
+                          <button type="button" class="btn btn-primary next-step">Next</button>
+                        </div>
+
+
+                        <!-- Step 4 -->
+<div class="form-step" id="step4">
+  <h4>Step 4</h4>
+
+  <!-- Display User Information -->
+  <!-- ... (previous fields) -->
+
+  <!-- Display Uploaded Documents -->
+  
+  <div class="mb-3">
+    <label for="displayedName" class="form-label">Name</label>
+    <input type="text" class="form-control" id="displayedName" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="displayedGender" class="form-label">Gender</label>
+    <input type="text" class="form-control" id="displayedGender" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="displayedMobileNumber" class="form-label">Mobile Number</label>
+    <input type="text" class="form-control" id="displayedMobileNumber" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="displayedPermanentAddress" class="form-label">PermanentAddress</label>
+    <input type="text" class="form-control" id="displayedPermanentAddress" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="displayedDistrict" class="form-label">District</label>
+    <input type="text" class="form-control" id="displayedDistrict" readonly>
+  </div>
+
+  <div class="mb-3">
+    <label for="displayedCNICFront" class="form-label">CNIC of Father / Mother (Front)</label>
+    <input type="text" class="form-control" id="displayedCNICFront" readonly>
+  </div>
+  
+  
+  <div class="mb-3">
+    <label for="displayedCNICBack" class="form-label">CNIC of Father / Mother (Back)</label>
+    <input type="text" class="form-control" id="displayedCNICBack" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="displayedEducationalCertificate" class="form-label">Educational Certificate</label>
+    <input type="text" class="form-control" id="displayedEducationalCertificate" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="displayedResidentialCertificate" class="form-label">Residential Certificate</label>
+    <input type="text" class="form-control" id="displayedResidentialCertificate" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="displayedVoterListVerification" class="form-label">Voter List Verification</label>
+    <input type="text" class="form-control" id="displayedVoterListVerification" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="displayedUtilityBill" class="form-label">Utility Bill</label>
+    <input type="text" class="form-control" id="displayedUtilityBill" readonly>
+  </div>
+  <div class="mb-3">
+    <label for="displayedNotarizedAffidavit" class="form-label">Notarized Affidavit</label>
+    <input type="text" class="form-control" id="displayedNotarizedAffidavit" readonly>
+  </div>
+
+  <!-- Notification Section -->
+  <div id="notification" style="display: none;">
+    <div class="alert alert-success" role="alert">
+      Domicile documents submitted successfully!<br>
+      Date: <span id="submissionDate"></span><br>
+      Time: <span id="submissionTime"></span><br>
+      Day: <span id="submissionDay"></span>
+    </div>
+
+  </div>
+  <script>
+    // Function to format mobile number input
+    function formatMobileNumber(input) {
+      let cleanedInput = input.value.replace(/\D/g, '').substr(0, 11);
+      if (cleanedInput.length > 4) {
+        cleanedInput = cleanedInput.substring(0, 4) + '-' + cleanedInput.substring(4);
+      }
+      // if (cleanedInput.length > 7) {
+      //   cleanedInput = cleanedInput.substring(0, 7)  + cleanedInput.substring(7);
+      // }
+      input.value = cleanedInput;
+    }
+  
+    // District names
+    var districtNames = [
+      "Badin",
+      "Dadu",
+      "Ghotki",
+      "Hyderabad",
+      "Jacobabad",
+      "Jamshoro",
+      "Karachi Central",
+      "Kashmore",
+      "Khairpur",
+      "Larkana",
+      "Matiari",
+      "Mirpur Khas",
+      "Naushahro Firoze",
+      "Shaheed Benazirabad",
+      "Qambar Shahdadkot",
+      "Sanghar",
+      "Shikarpur",
+      "Sukkur",
+      "Tando Allahyar",
+      "Tando Muhammad Khan",
+      "Tharparkar",
+      "Thatta",
+      "Umerkot",
+      "Sujawal",
+      "Karachi East",
+      "Karachi South",
+      "Karachi West",
+      "Korangi",
+      "Malir"
+    ];
+  
+    // Populate the select element with options
+    var selectElement = document.getElementById("inputDistrict");
+    for (var i = 0; i < districtNames.length; i++) {
+      var option = document.createElement("option");
+      option.value = i + 1; // Set the option value to match your values (1, 2, 3, ...)
+      option.text = districtNames[i]; // Set the option text to the district name
+      selectElement.appendChild(option);
+    }
+  
+    // Function to display captured data on Step 4
+    function displayDataFromSteps() {
+      // Capture data from Step 1
+      const name = document.getElementById("inputName").value;
+      const gender = document.getElementById("inputGender").value;
+      const mobile = document.getElementById("MobileNumber").value;
+      const address = document.getElementById("inputAddress").value;
+      const selectedDistrict = document.getElementById("inputDistrict").options[document.getElementById("inputDistrict").selectedIndex].text;
+  
+      // Display data from Step 1
+      document.getElementById("displayedName").value = name;
+      document.getElementById("displayedGender").value = gender;
+      document.getElementById("displayedMobileNumber").value = mobile;
+      document.getElementById("displayedPermanentAddress").value = address;
+      document.getElementById("displayedDistrict").value = selectedDistrict;
+  
+      // Capture data from Step 2 (You need to capture data from Step 2 and Step 3 similarly)
+      // Example:
+      const cnicFront = document.getElementById("cnicFile1").files[0] ? document.getElementById("cnicFile1").files[0].name : '';
+      document.getElementById("displayedCNICFront").value = cnicFront;
+  
+      // Capture data from Step 3 (You need to capture data from Step 2 and Step 3 similarly)
+      // Example:
+      const notarizedAffidavit = document.getElementById("cnicFile7").files[0] ? document.getElementById("cnicFile7").files[0].name : '';
+      document.getElementById("displayedNotarizedAffidavit").value = notarizedAffidavit;
+    }
+  
+    // Add an event listener to call the displayDataFromSteps function when transitioning to Step 4
+    const nextButtonStep3 = document.querySelector("#step3 .next-step");
+    nextButtonStep3.addEventListener("click", function () {
+      // Capture and display data when transitioning to Step 4
+      displayDataFromSteps();
+    });
+  
+    // Function to display uploaded document file names
+    function displayDocumentNames() {
+      document.getElementById("displayedCNICFront").value = document.getElementById("cnicFile1").files[0] ? document.getElementById("cnicFile1").files[0].name : '';
+      document.getElementById("displayedCNICBack").value = document.getElementById("cnicFile2").files[0] ? document.getElementById("cnicFile2").files[0].name : '';
+      document.getElementById("displayedEducationalCertificate").value = document.getElementById("cnicFile3").files[0] ? document.getElementById("cnicFile3").files[0].name : '';
+      document.getElementById("displayedResidentialCertificate").value = document.getElementById("cnicFile4").files[0] ? document.getElementById("cnicFile4").files[0].name : '';
+      document.getElementById("displayedVoterListVerification").value = document.getElementById("cnicFile5").files[0] ? document.getElementById("cnicFile5").files[0].name : '';
+      document.getElementById("displayedUtilityBill").value = document.getElementById("cnicFile6").files[0] ? document.getElementById("cnicFile6").files[0].name : '';
+      document.getElementById("displayedNotarizedAffidavit").value = document.getElementById("cnicFile7").files[0] ? document.getElementById("cnicFile7").files[0].name : '';
+    }
+  
+    // Add an event listener to call the displayDocumentNames function when file inputs change
+    document.getElementById("cnicFile1").addEventListener("change", displayDocumentNames);
+    document.getElementById("cnicFile2").addEventListener("change", displayDocumentNames);
+    document.getElementById("cnicFile3").addEventListener("change", displayDocumentNames);
+    document.getElementById("cnicFile4").addEventListener("change", displayDocumentNames);
+    document.getElementById("cnicFile5").addEventListener("change", displayDocumentNames);
+    document.getElementById("cnicFile6").addEventListener("change", displayDocumentNames);
+    document.getElementById("cnicFile7").addEventListener("change", displayDocumentNames);
+  
+    // Call the displayDocumentNames function to display any pre-selected files when the page loads
+    window.addEventListener('DOMContentLoaded', displayDocumentNames);
+    document.addEventListener('DOMContentLoaded', function () {
+    const submitButton = document.getElementById('submitButton');
+    submitButton.addEventListener('click', function (event) {
+      const requiredFields = document.querySelectorAll('[required]');
+      let isValid = true;
+
+      requiredFields.forEach(function (field) {
+        if (!field.value) {
+          isValid = false;
+        }
+      });
+
+      if (!isValid) {
+        event.preventDefault(); // Prevent form submission
+        alert('Please fill in all required fields.'); // Display an error message
+      }
+    });
+  });
+  </script>
+  
+
+  <button type="button" class="btn btn-secondary prev-step">Previous</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Bootstrap JavaScript and jQuery CDNs -->
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+          <script>
+            // Initialize the current step
+            let currentStep = 1;
+
+            // Function to show the current step and hide others
+            function showStep(step) {
+              $(".form-step").hide();
+              $(`#step${step}`).show();
+            }
+
+            // Handle "Next" button click
+            $(".next-step").on("click", function () {
+              if (currentStep < 4) {
+                currentStep++;
+                showStep(currentStep);
+              }
+            });
+
+            // Handle "Previous" button click
+            $(".prev-step").on("click", function () {
+              if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+              }
+            });
+
+            // Initialize the form with the first step
+            showStep(currentStep);
+          </script>
+
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>E-Services Sindh</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
